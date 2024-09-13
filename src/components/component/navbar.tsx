@@ -45,7 +45,7 @@ export function Navbar() {
       <div className="w-[150px] hidden lg:flex">
         <Link href="#" className="flex items-center gap-2" prefetch={false}>
           <img
-            src="/Logos.jpeg" // Ruta correcta para la imagen en Next.js
+            src="/Logosss.png" // Ruta correcta para la imagen en Next.js
             alt="Acme Inc"
             className="h-20 w-auto"
           />
@@ -57,7 +57,7 @@ export function Navbar() {
           <NavigationMenuList>
             <NavigationMenuLink asChild>
               <Link
-                href="#"
+                href="/main"
                 className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                 prefetch={false}
               >
@@ -66,23 +66,13 @@ export function Navbar() {
             </NavigationMenuLink>
             <NavigationMenuLink asChild>
               <Link
-                href="#"
+                href="/nosotros"
                 className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                 prefetch={false}
               >
                 Sobre nosotros
               </Link>
             </NavigationMenuLink>
-            <NavigationMenuLink asChild>
-              <Link
-                href="#"
-                className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
-                prefetch={false}
-              >
-                Portafolio
-              </Link>
-            </NavigationMenuLink>
-            <NavigationMenuLink asChild />
           </NavigationMenuList>
         </NavigationMenu>
       </div>
@@ -99,7 +89,7 @@ export function Navbar() {
           <DropdownMenuTrigger asChild>
             <Button variant="outline" size="icon" className="overflow-hidden rounded-full">
               <img
-                src="/usuario.jpeg"
+                src="/usuario.png"
                 width={36}
                 height={36}
                 alt="Avatar"

@@ -73,19 +73,19 @@ export function Regalos() {
     },
     {
       id: 7,
-      image: "10.jpg",
+      image: "10.png",
       title: "Ancheta 5",
       description: "55.000",
     },
     {
       id: 8,
-      image: "Caja_de_Regalo_Decorativa.jpg",
+      image: "Caja de Regalo Decorativa.jpg",
       title: "Caja de Regalo Decorativa",
       description: "5.000",
     },
     {
       id: 9,
-      image: "Taza_Personalizada.jpg",
+      image: "Taza Personalizada.jpg",
       title: "Taza Personalizada",
       description: "15.000",
     },
@@ -116,48 +116,7 @@ export function Regalos() {
 
   return (
     <div>
-      <header className="bg-primary text-primary-foreground py-4 px-6">
-        <div className="container mx-auto flex items-center justify-between">
-          <Link href="#" className="text-xl font-bold flex items-center" prefetch={false}>
-            <img
-              src="/placeholder.svg"
-              alt="Logo"
-              width={32}
-              height={32}
-              className="mr-2"
-              style={{ aspectRatio: "32/32", objectFit: "cover" }}
-            />
-            Catálogo de Productos
-          </Link>
-          <div className="relative">
-            <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
-            <Input
-              type="text"
-              placeholder="Buscar producto..."
-              value={searchTerm}
-              onChange={handleSearch}
-              className="bg-primary-foreground text-primary rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary-foreground focus:ring-offset-2"
-            />
-          </div>
-          <div className="flex items-center">
-            <Button variant="outline" size="icon" className="relative" onClick={handleAddToCart}>
-              <ShoppingCartIcon className="h-6 w-6" />
-              {cartCount > 0 && (
-                <span className="absolute -top-2 -right-2 bg-accent text-accent-foreground rounded-full px-2 py-1 text-xs font-medium">
-                  {cartCount}
-                </span>
-              )}
-              <span className="sr-only">Cart</span>
-            </Button>
-            {showAlert && cartCount > 0 && (
-              <Alert variant="default" className="ml-4 hidden sm:flex">
-                <CircleCheckIcon className="h-5 w-5 mr-2" />
-                <AlertDescription>{cartCount} producto(s) agregado(s) al carrito.</AlertDescription>
-              </Alert>
-            )}
-          </div>
-        </div>
-      </header>
+      
       <main className="container mx-auto py-12 px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {filteredProducts.map((product) => (
           <div key={product.id} className="bg-background rounded-lg shadow-md overflow-hidden">
@@ -179,55 +138,6 @@ export function Regalos() {
           </div>
         ))}
       </main>
-      <footer className="bg-black text-white p-4 md:px-6 lg:px-8 w-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div>
-            <h3 className="text-lg font-bold mb-2">Métodos de Pago</h3>
-            <div className="grid grid-cols-3 gap-4">
-              <img
-                src="/placeholder.svg"
-                alt="Visa"
-                width={80}
-                height={50}
-                className="object-contain"
-                style={{ aspectRatio: "80/50", objectFit: "cover" }}
-              />
-              <img
-                src="/placeholder.svg"
-                alt="Mastercard"
-                width={80}
-                height={50}
-                className="object-contain"
-                style={{ aspectRatio: "80/50", objectFit: "cover" }}
-              />
-              <img
-                src="/placeholder.svg"
-                alt="American Express"
-                width={80}
-                height={50}
-                className="object-contain"
-                style={{ aspectRatio: "80/50", objectFit: "cover" }}
-              />
-            </div>
-          </div>
-          <div>
-            <h3 className="text-lg font-bold mb-2">Contáctanos</h3>
-            <ul className="space-y-1">
-              <li>Teléfono: 3105751123</li>
-              <li>Instagram: <a href="https://www.instagram.com/detalles.omega?igsh=MXVvM3lxMTViY2tzMw==" className="underline" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-              <li>Dirección: Carrera 100 #139, Bogotá, Colombia</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-bold mb-2">Información Legal</h3>
-            <ul className="space-y-1">
-              <li>Términos y Condiciones</li>
-              <li>Política de Privacidad</li>
-              <li>Aviso de Cookies</li>
-            </ul>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
