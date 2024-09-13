@@ -201,9 +201,11 @@ export function Main() {
               </div>
             ))}
           </div>
-          <div className="flex justify-center mt-8">
-            <Button variant="outline">Ver más</Button>
-          </div>
+          <Link href="/regalos" >
+            <div className="flex justify-center mt-8">
+              <Button variant="outline">Ver más</Button>
+            </div>
+          </Link>
         </div>
       </section>
 

@@ -31,6 +31,8 @@ import { Button } from "@/components/ui/button"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { SVGProps, useState } from "react"
 
+
+
 export function Regalos() {
   const products = [
     {
