@@ -358,3 +358,4 @@ function Package2Icon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) 
     </svg>
   )
 }
+

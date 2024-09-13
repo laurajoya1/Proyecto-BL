@@ -32,19 +32,19 @@ export default function SobreNosotros() {
               <ul className="space-y-2 text-gray-500 dark:text-gray-400">
                 <li className="flex items-center">
                   <CheckCircle2 className="mr-2 h-5 w-5 text-green-500" />
-                  Experiencia comprobada con más de una década en el mercado
+                  Compra facil y segura.
                 </li>
                 <li className="flex items-center">
                   <CheckCircle2 className="mr-2 h-5 w-5 text-green-500" />
-                  Soluciones personalizadas adaptadas a tus necesidades específicas
+                  Variedad de productos.
                 </li>
                 <li className="flex items-center">
                   <CheckCircle2 className="mr-2 h-5 w-5 text-green-500" />
-                  Atención al cliente 24/7, sin importar tu ubicación
+                  Promociones exclusivas
                 </li>
                 <li className="flex items-center">
                   <CheckCircle2 className="mr-2 h-5 w-5 text-green-500" />
-                  Tecnología de vanguardia para resultados óptimos
+                  Envios rapidos.
                 </li>
               </ul>
             </div>
@@ -57,38 +57,28 @@ export default function SobreNosotros() {
                   <ul className="list-disc list-inside text-gray-500 dark:text-gray-400">
                     <li>La empresa Omega se destaca por ofrecer una amplia gama de prodctos de alta calidad a precios muy accesibles.
                       Su objetivo principal es proporcionar momentos de felicidad a las personas cercanas mediante el regalo de dulces, peluches, decoraciones y muchos articulos especiales
-                      paracelebrar fechas importantes. La
+                      paracelebrar fechas importantes. La compañia invita a los clientes a aprovechar sus productos para hacerque cada día sea más especial.
                     </li>
                   </ul>
                 </div>
                 <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
-                  <h4 className="font-bold mb-2">La Competencia</h4>
+                  <h4 className="font-bold mb-2">La distancia no es excusa</h4>
                   <ul className="list-disc list-inside text-gray-500 dark:text-gray-400">
-                    <li>Servicio estandarizado</li>
-                    <li>Soporte limitado</li>
-                    <li>Actualizaciones ocasionales</li>
-                    <li>Planes rígidos</li>
+                    <li>Omega ofrece una innovadora solución para aquellos momentos en los que la distancia separa a las parejas o familiares queridos.
+                      A través de su servicio, los clientes pueden enviar un regalo sorpresa directamente al lugar deseado, sin importar cuán lejos este la destinataria. Ademas, se permite personalizar una tarjeta con un mensaje afectuoso, asegurado que el receptor
+                      sienta el calor del envio incluso antes de abrirlo.
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
             
             <div className="space-y-2 pt-4">
-              <h3 className="text-xl font-bold">La distancia no es excusa</h3>
+              <h3 className="text-xl font-bold">Donde nos ubicamos</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Gracias a nuestra plataforma en línea y nuestro equipo distribuido globalmente, 
-                podemos ofrecer nuestros servicios en cualquier parte del mundo. 
-                La calidad y la atención personalizada están a solo un clic de distancia.
+                Nos encontramos ubicados en la carrera 100 con calle 139, en la ciudad de Bogotá, y ahora en nustro portal web.
+                Listos para brindar la mayor seguridad, eficacia y calidad a nuesros clientes.
               </p>
-            </div>
-
-            <div className="flex gap-4 pt-4">
-              <Button asChild>
-                <Link href="/servicios">Nuestros Servicios</Link>
-              </Button>
-              <Button asChild variant="outline">
-                <Link href="/contacto">Contáctanos</Link>
-              </Button>
             </div>
           </div>
         </div>
