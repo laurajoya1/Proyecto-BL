@@ -1,13 +1,13 @@
 import { Footer } from '@/components/component/footer'
-import { Nosotros } from '@/components/component/nosotros'
 import { Navbar } from '@/components/component/navbar'
+import SobreNosotros from '@/components/component/SobreNosotros'
 import React from 'react'
 
 function page() {
   return (
     <div>
         <Navbar />
-        < Nosotros />
+        <SobreNosotros/>
         < Footer/>
     </div>
   )

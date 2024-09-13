@@ -12,7 +12,7 @@ export default function SobreNosotros() {
             alt="Equipo de la empresa"
             className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
             height={550}
-            src="/placeholder.svg"
+            src="/papeleria1.png"
             width={550}
           />
           <div className="flex flex-col justify-center space-y-4">
@@ -21,8 +21,9 @@ export default function SobreNosotros() {
                 Sobre Nosotros
               </h2>
               <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                Desde 2010, nos dedicamos a proporcionar soluciones innovadoras y de alta calidad. 
-                Nuestro equipo de profesionales apasionados se esfuerza por mantenerse a la vanguardia de la industria.
+               En Omega, comenzamos como una papelería tradicional, pero pronto nos dimos cuenta de que la verdadera magia de dar regalos estaba siendo subestimada.
+               Así que tomamos un nuevo rumbo. Ahora, no solo somos una papelería, nos dedicamos a reavivar la alegría y el encanto de regalar, sin importar el tamaño del presente.
+               En Omega, creemos que cada regalo tiene el poder de crear momentos especiales y memorables, y por supuesto, seguimos brindando todos los servicios que una excelente papeleria ofrece.
               </p>
             </div>
             
@@ -52,12 +53,12 @@ export default function SobreNosotros() {
               <h3 className="text-2xl font-bold">Qué ofrecemos</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
-                  <h4 className="font-bold mb-2">Nuestro Servicio</h4>
+                  <h4 className="font-bold mb-2">Detalles a tu alcance</h4>
                   <ul className="list-disc list-inside text-gray-500 dark:text-gray-400">
-                    <li>Atención personalizada</li>
-                    <li>Soporte técnico especializado</li>
-                    <li>Actualizaciones regulares</li>
-                    <li>Flexibilidad en planes</li>
+                    <li>La empresa Omega se destaca por ofrecer una amplia gama de prodctos de alta calidad a precios muy accesibles.
+                      Su objetivo principal es proporcionar momentos de felicidad a las personas cercanas mediante el regalo de dulces, peluches, decoraciones y muchos articulos especiales
+                      paracelebrar fechas importantes. La
+                    </li>
                   </ul>
                 </div>
                 <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
