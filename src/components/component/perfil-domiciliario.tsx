@@ -41,28 +41,23 @@ export function PerfilDomiciliario() {
               <AvatarImage src="/placeholder-user.jpg" alt="Avatar del usuario" />
               <AvatarFallback>JD</AvatarFallback>
             </Avatar>
-            <h1 className="text-xl font-bold md:text-2xl lg:text-3xl">John Doe</h1>
+            <h1 className="text-xl font-bold md:text-2xl lg:text-3xl" style={{color: 'white'}}>John Doe</h1>
           </div>
           <nav>
             <ul className="flex space-x-4 md:space-x-6 lg:space-x-8">
               <li>
-                <Link href="#" className="hover:underline" prefetch={false}>
+                <Link href="/main" className="hover:underline" prefetch={false} style={{color: 'white'}}>
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline" prefetch={false}>
-                  Perfil
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:underline" prefetch={false}>
+                <Link href="/pedidos" className="hover:underline" prefetch={false} style={{color: 'white'}}>
                   Pedidos
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline" prefetch={false}>
-                  Configuración
+                <Link href="/login" className="hover:underline" prefetch={false} style={{color: 'white'}}>
+                  Cerrar sesion
                 </Link>
               </li>
             </ul>
@@ -78,100 +73,97 @@ export function PerfilDomiciliario() {
                 <AvatarFallback>JD</AvatarFallback>
               </Avatar>
               <div>
-                <h2 className="text-xl font-bold md:text-2xl lg:text-3xl">John Doe</h2>
-                <p className="text-sm md:text-base lg:text-lg">Repartidor</p>
+                <h2 className="text-xl font-bold md:text-2xl lg:text-3xl" style={{color: 'white'}}>John Doe</h2>
+                <p className="text-sm md:text-base lg:text-lg" style={{color: 'white'}}>Repartidor</p>
               </div>
             </div>
           </CardHeader>
           <CardContent className="px-6 py-8 md:px-8 md:py-10 lg:px-12 lg:py-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               <div>
-                <Label htmlFor="name">Nombre</Label>
+                <Label htmlFor="name" style={{color: 'blue'}}>Nombre</Label>
                 <Input id="name" value="John Doe" readOnly className="bg-[#f0f4f8]" />
               </div>
               <div>
-                <Label htmlFor="phone">Teléfono</Label>
+                <Label htmlFor="phone"  style={{color: 'blue'}}>Teléfono</Label>
                 <Input id="phone" value="+1 (555) 555-5555" readOnly className="bg-[#f0f4f8]" />
               </div>
               <div>
-                <Label htmlFor="email">Correo electrónico</Label>
+                <Label htmlFor="email"  style={{color: 'blue'}}>Correo electrónico</Label>
                 <Input id="email" value="john@example.com" readOnly className="bg-[#f0f4f8]" />
               </div>
               <div>
-                <Label htmlFor="address">Dirección</Label>
-                <div className="bg-[#f0f4f8] rounded-md p-2">
-                  <p className="text-gray-500 text-sm md:text-base lg:text-lg">123 Main St, Anytown USA</p>
-                </div>
+                <Label htmlFor="name"  style={{color: 'blue'}}>Identificacion</Label>
+                <Input id="identification" value="1034281342" readOnly className="bg-[#f0f4f8]" />
               </div>
+              <div>
+                <Label htmlFor="Age"  style={{color: 'blue'}}>Edad</Label>
+                <Input id="Age" value="32" readOnly className="bg-[#f0f4f8]" />
+              </div>
+              <div>
+                <Label htmlFor="vehicle"  style={{color: 'blue'}}>Tipo de vehiculo</Label>
+                <Input id="vehicle" value="Moto" readOnly className="bg-[#f0f4f8]" />
+              </div>
+              
             </div>
+            
             <Separator className="my-6 md:my-8 lg:my-10" />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-              <div>
-                <Label htmlFor="orders">Pedidos</Label>
-                <div className="bg-[#f0f4f8] rounded-md p-2">
-                  <p className="text-gray-500 text-sm md:text-base lg:text-lg">125 pedidos completados</p>
-                </div>
-              </div>
-              <div>
-                <Label htmlFor="earnings">Ganancias</Label>
-                <div className="bg-[#f0f4f8] rounded-md p-2">
-                  <p className="text-gray-500 text-sm md:text-base lg:text-lg">$12,345.67</p>
-                </div>
-              </div>
-            </div>
+            
           </CardContent>
           <CardFooter className="bg-[#f0f4f8] px-6 py-4 rounded-b-lg md:px-8 md:py-6 lg:px-12 lg:py-8">
-            <div className="flex justify-end gap-2 md:gap-3 lg:gap-4">
-              <Button
-                variant="outline"
-                className="bg-white text-[#0077b6] hover:bg-[#0077b6] hover:text-white px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4"
-              >
-                Editar perfil
-              </Button>
-              <Button className="bg-[#0077b6] text-white hover:bg-[#005a8c] px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4">
-                Actualizar cuenta
-              </Button>
-            </div>
+          <button className="bg-white border border-blue-500 rounded-lg px-4 py-2 hover:bg-blue-100">
+  <Link href="#Actualizar cuenta" prefetch={false} className="text-blue-500 no-underline hover:text-blue-700">
+    Actualizar cuenta
+  </Link>
+</button>
+
           </CardFooter>
         </Card>
       </div>
-      <div className="bg-[#0077b6] py-12 px-6 md:py-16 md:px-8 lg:py-20 lg:px-12 bg-[url('/placeholder-background.jpg')] bg-cover bg-center">
+      <div className="bg-[#0077b6] py-12 px-6 md:py-16 md:px-8 lg:py-20 lg:px-12 bg-[url('/placeholder-background.jpg')] bg-cover bg-center" id="Actualizar cuenta">
         <div className="container mx-auto flex flex-col items-center justify-center">
-          <h2 className="text-3xl font-bold text-white mb-4 md:text-4xl lg:text-5xl">Actualizar cuenta</h2>
-          <p className="text-lg text-white mb-8 md:text-xl lg:text-2xl">
+          <h2 className="text-3xl font-bold text-white mb-4 md:text-4xl lg:text-5xl"style={{ color: 'white'}}>Actualizar cuenta</h2>
+          <p className="text-lg text-white mb-8 md:text-xl lg:text-2xl" style={{ color: 'white'}}>
             Completa los siguientes campos para actualizar tu información.
           </p>
           <div className="w-full max-w-[600px] bg-white rounded-lg shadow-lg p-6 md:p-8 lg:p-10">
             <form>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                 <div>
-                  <Label htmlFor="name">Nombre</Label>
+                  <Label htmlFor="name" style={{ color: 'white'}}>Nombre</Label>
                   <Input id="name" defaultValue="John Doe" className="bg-[#f0f4f8]" />
                 </div>
                 <div>
-                  <Label htmlFor="phone">Teléfono</Label>
+                  <Label htmlFor="phone" style={{ color: 'white'}}>Teléfono</Label>
                   <Input id="phone" defaultValue="+1 (555) 555-5555" className="bg-[#f0f4f8]" />
                 </div>
                 <div>
-                  <Label htmlFor="email">Correo electrónico</Label>
+                  <Label htmlFor="email" style={{ color: 'white'}}>Correo electrónico</Label>
                   <Input id="email" defaultValue="john@example.com" className="bg-[#f0f4f8]" />
                 </div>
                 <div>
-                  <Label htmlFor="address">Dirección</Label>
-                  <Input id="address" defaultValue="123 Main St, Anytown USA" className="bg-[#f0f4f8]" />
+                  <Label htmlFor="adidentification" style={{ color: 'white'}}>Identificacion</Label>
+                  <Input id="identification" defaultValue="1034281342" className="bg-[#f0f4f8]" />
                 </div>
+                <div>
+                  <Label htmlFor="Age" style={{ color: 'white'}}>Edad</Label>
+                  <Input id="Age" defaultValue="32" className="bg-[#f0f4f8]" />
+                </div>
+                <div>
+                  <Label htmlFor="vehicle" style={{ color: 'white'}}>Tpo de vehiculo</Label>
+                  <Input id="vehicle" defaultValue="Moto" className="bg-[#f0f4f8]" />
+                </div>
+                
               </div>
               <Separator className="my-6 md:my-8 lg:my-10" />
               <div className="flex justify-end gap-2 md:gap-3 lg:gap-4">
-                <Button
-                  variant="outline"
-                  className="bg-white text-[#0077b6] hover:bg-[#0077b6] hover:text-white px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4"
-                >
-                  Cancelar
-                </Button>
-                <Button className="bg-[#0077b6] text-white hover:bg-[#005a8c] px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4">
-                  Actualizar
-                </Button>
+                
+              <button className="bg-white border border-blue-500 rounded-lg px-4 py-2 hover:bg-white-100" style={{color: 'white'}}>
+  <Link href="/main" prefetch={false} className="text-blue-500 no-underline hover:text-blue-700">
+    Actualizar 
+  </Link>
+</button>
+
               </div>
             </form>
           </div>
