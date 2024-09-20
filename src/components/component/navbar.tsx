@@ -99,9 +99,17 @@ export function Navbar() {
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuItem>Registrate</DropdownMenuItem>
-            <DropdownMenuItem>Crea tu cuenta</DropdownMenuItem>
-          </DropdownMenuContent>
+  <Link href="/registro">
+    <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded block text-center mb-2">
+      Regístrate
+    </div>
+  </Link>
+  <Link href="/login">
+    <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded block text-center">
+      Inicia sesión
+    </div>
+  </Link>
+</DropdownMenuContent>
         </DropdownMenu>
         <Popover>
           <PopoverTrigger asChild>
